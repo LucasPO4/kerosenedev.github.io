@@ -8,7 +8,7 @@
       border: 0px
     }
   </style>
-  <button>Access</button>
+  <button id="1">Access</button>
 
 
   <script>
@@ -27,6 +27,38 @@
     iniFrame();
 
   </script>
+
+
+
+<script>
+  document.getElementById('1').addEventListener('click', function () {
+      var url = "index2.html";
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+</script>
+
+
 </head>
 
 
