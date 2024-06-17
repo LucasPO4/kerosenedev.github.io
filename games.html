@@ -5,6 +5,11 @@
   <h1>KEROSENE</h1>
   <p>games!</p>
 
+  <script src="zzzs.js"></script>
+
+
+
+
 
 </head>
 
@@ -20,6 +25,13 @@
     <button id="button8">tomb of the mask</button>
     <button id="button9">friday night funkin</button>
     <button id="button10">angry birds</button>
+    <button id="button11">sort the court</button>
+    <button id="button12">temple run</button>
+    <button id="button13">bitlife</button>
+    <button id="button14">gimkit</button>
+    <button id="button15">kogama</button>
+    <button id="button16">gd subzero</button>
+    <button id="button17">gd meltdown</button>
   </div>
   <script>
     document.getElementById('button1').addEventListener('click', function () {
@@ -117,7 +129,15 @@
         iframe.style.margin = '0';
         iframe.src = url;
         win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
       }
+    });
 
     document.getElementById('button8').addEventListener('click', function () {
       var url = "https://tombofthemask.github.io/g8/tomb-of-the-mask";
@@ -145,15 +165,6 @@
       }
     });
 
-
-        var interval = setInterval(function () {
-          if (win.closed) {
-            clearInterval(interval);
-            win = undefined;
-          }
-        }, 500);
-      }
-    });
 
     document.getElementById('button5').addEventListener('click', function () {
       var url = "https://geometrydashonline.io/geometry-dash-online";
@@ -211,6 +222,28 @@
       var url = "mario.html";
       var win;
       if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
 
     document.getElementById('button9').addEventListener('click', function () {
       var url = "https://html-classic.itch.zone/html/2876359-1000879/index.html";
@@ -264,8 +297,190 @@
       }
     });
 
+    document.getElementById('button11').addEventListener('click', function () {
+      var url = "https://html-classic.itch.zone/html/347310/index.html?v=1542780889"
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
 
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+    document.getElementById('button12').addEventListener('click', function () {
+      var url = "https://gamemonetize.co/game/pkyyuilfrqkcdnmrxsg60j22ypk0peje/"
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
     
+    document.getElementById('button13').addEventListener('click', function () {
+      var url = "https://23031801-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.6jI6mC1Equ4.O%2Fam%3DAAAQ%2Fd%3D1%2Frs%3DAHpOoo-79kMK-M6Si-J0E_6fI_9RBHBrwQ%2Fm%3D__features__/"
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+
+    document.getElementById('button14').addEventListener('click', function () {
+      var url = "https://www.gimkit.com"
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+    document.getElementById('button15').addEventListener('click', function () {
+      var url = "https://www.kogama.com/"
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+
+
+    document.getElementById('button16').addEventListener('click', function () {
+      var url = "https://geometrydashsubzero.io/"
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+    document.getElementById('button17').addEventListener('click', function () {
+      var url = "https://geometrydashmeltdown.io/"
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
   </script>
 </body>
 
