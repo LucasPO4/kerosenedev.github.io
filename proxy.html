@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Google</title>
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- header font -->
+  <link href="//fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+
+  <!-- body font -->
+  <link href="//fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="main">
+
+      <h1>kerosene unblocker (node)</h1>
+
+      <div id="error"></div>
+
+      <form action="no-js" method="get" id="unblocker-form">
+        <p>
+          search duckduckgo or input url..
+          <input type="text" id="url" name="url" autofocus="autofocus" />
+          <br>
+          <centre>
+          <input type="submit" value="dive in" />
+          </centre>
+        </p>
+
+      </form>
+    </div>
+
+  </div>
+  <script>
+    function $(id) {
+      return document.getElementById(id);
+    }
+
+    $('unblocker-form').onsubmit = function () {
+      var url = $('url').value;
+      if (url.substr(0, 4) != "http") {
+        // url heuristic: if it has at least one dot and doesn't have any spaces, assume it's a url that just omitted the protocol
+        if (url.includes('.') && !url.includes(' ')) {
+          url = "https://" + url;
+        } else
+        
+        url = "https://duckduckgo.com/search?va=" + encodeURIComponent(url);
+      }
+      window.location = location.protocol + '//' + location.host + '/proxy/' + url;
+      return false;
+    };
+
+    function checkError() {
+      var search = window.location.search;
+      var start = search.indexOf('error=');
+      if (start > -1) {
+        var stop = search.indexOf('&', start);
+        if (stop == -1) { stop = undefined; }
+        // +6 for "error="
+        var err = search.substr(start + 6, stop);
+        var $error = $('error');
+        $error.innerText = $error.textContent = decodeURIComponent(err);
+        $error.style.display = "block";
+      }
+    }
+
+    window.onload = function () {
+      $('url').focus();
+      checkError();
+    }
+  </script>
+
+  
+
+</body>
+
+</html>

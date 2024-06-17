@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script language="JavaScript">
+  
+    // hide
+
+    var password;
+    var pass1 = "chicken";
+
+    password = prompt('Enter your login to access the knowledge organiser!', ' ');
+
+    if (password == pass1) {
+      alert('welcome to kerosene! / html forevaaa');
+    }
+
+    else {
+      window.location = "https://classroom.google.com/";
+    }
+  </script>
+
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Classroom</title>
+</head>
+
+<body>
+  <h6>updated: 21th may / fresh outta development</h6>
+  <p>welcome to:</p>
+  <h1>KEROSENE.</h1>
+
+  <div class="bombo"> <!-- centre the buttons-->
+    <button id="button1">educational resources</button>
+    <button id="buttonc">ultraviolet</button>
+    <button id="button2">rammerhead</button>
+    <button id="button3">suggest</button>
+  </div>
+
+
+  <script>
+    document.getElementById('button1').addEventListener('click', function () {
+      var url = "games.html";
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        win.document.title = 'SIC'
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+    document.getElementById('buttonc').addEventListener('click', function () {
+      var url = "https://uvkerosene-5rzotn3x.b4a.run/";
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        win.document.title = 'SIC'
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+    document.getElementById('button2').addEventListener('click', function () {
+      var url = "https://rasuku.strangled.net/";
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        win.document.title = 'SIC'
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+
+    document.getElementById('button3').addEventListener('click', function () {
+      var url = "login.html";
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        win.document.title = 'SIC'
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+  </script>
+</body>
+
+</html>

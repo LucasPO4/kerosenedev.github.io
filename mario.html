@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <p>super mario 64 @</p>
+        <h1>KEROSENE</h1>
+        <p>Arrow Keys = Move;
+            X Key = jump, read dialogue,  select option;
+            C Key = grab throw, punch;
+            W, A, S, D = movement controls;
+            Spacebar = crouch, crawl, ground pound;
+            Enter = pause, start</p>
+            <div id="bombo">
+            <button id='mario-unlock'>play</button>
+</div>
+    </head>
+
+  
+
+    <body>
+        <script>
+        document.getElementById('mario-unlock').addEventListener('click', function() {
+            var url = "https://mediaology.mediaology.com/main/games/sm64/start.html";
+            var win;
+            if (win) {
+              win.focus();
+            } else {
+              win = window.open();
+              win.document.body.style.margin = '0';
+              win.document.body.style.height = '100vh';
+              var iframe = win.document.createElement('iframe');
+              iframe.style.border = 'none';
+              iframe.style.width = '100%';
+              iframe.style.height = '100%';
+              iframe.style.margin = '0';
+              iframe.src = url;
+              win.document.body.appendChild(iframe);
+      
+              var interval = setInterval(function() {
+                if (win.closed) {
+                  clearInterval(interval);
+                  win = undefined;
+                }
+              }, 500);
+            }
+          });
+</script>
+    </body>
+    </html>

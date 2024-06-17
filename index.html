@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <style>
+    button {
+      background-color: white;
+      color: white;
+      border: 0px
+    }
+  </style>
+  <button>Access</button>
+
+
+  <script>
+    function iniFrame() {
+      if (window.location !== window.parent.location) {
+        // The page is in an iFrames
+        console.log('page successfully protected!')
+      }
+      else {
+        // The page is not in an iFrame
+        document.write('this page is not framed!')
+      }
+    }
+
+    // Calling iniFrame function
+    iniFrame();
+
+  </script>
+</head>
+
+
+
+<body>
+
+
+</body>
+
+</html>
