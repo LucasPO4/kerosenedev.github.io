@@ -8,9 +8,6 @@
   <script src="zzzs.js"></script>
 
 
-
-
-
 </head>
 
 <body>
@@ -139,31 +136,6 @@
       }
     });
 
-    document.getElementById('button8').addEventListener('click', function () {
-      var url = "https://tombofthemask.github.io/g8/tomb-of-the-mask";
-      var win;
-      if (win) {
-        win.focus();
-      } else {
-        win = window.open();
-        win.document.body.style.margin = '0';
-        win.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = url;
-        win.document.body.appendChild(iframe);
-
-        var interval = setInterval(function () {
-          if (win.closed) {
-            clearInterval(interval);
-            win = undefined;
-          }
-        }, 500);
-      }
-    });
 
 
     document.getElementById('button5').addEventListener('click', function () {
@@ -243,10 +215,35 @@
         }, 500);
       }
     });
+    
+    document.getElementById('button8').addEventListener('click', function () {
+      var url = "https://tombofthemask.github.io/g8/tomb-of-the-mask";
+      var win;
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
 
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
 
     document.getElementById('button9').addEventListener('click', function () {
-      var url = "https://html-classic.itch.zone/html/2876359-1000879/index.html";
+      var url = "https://html-classic.itch.zone/html/2876359-1004346/index.html";
       var win;
       if (win) {
         win.focus();
@@ -350,7 +347,7 @@
     });
     
     document.getElementById('button13').addEventListener('click', function () {
-      var url = "https://23031801-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.6jI6mC1Equ4.O%2Fam%3DAAAQ%2Fd%3D1%2Frs%3DAHpOoo-79kMK-M6Si-J0E_6fI_9RBHBrwQ%2Fm%3D__features__/"
+      var url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/awesome-aws@37c682c65a5a4c1ddc5b5ff2b840924526f209b4/scripts/blf.xml&container=ig"
       var win;
       if (win) {
         win.focus();
