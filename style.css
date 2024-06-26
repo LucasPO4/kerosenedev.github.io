@@ -208,3 +208,17 @@ button:focus::after {
 .bombo {
   text-align: center;
 }
+
+
+span {
+  font-size:xx-large;
+  color: purple;
+}
+
+.id {
+  color: purple;
+}
+
+h3 {
+  color: purple;
+}
